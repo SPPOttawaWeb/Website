@@ -47,7 +47,7 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
 
   return (
     <header
-      className={`bg-gradient-to-r from-red-900 via-red-800 to-red-900 text-white shadow-2xl fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out ${
+      className={`bg-gradient-to-r from-red-900 via-red-800 to-red-900 text-white shadow-lg fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out ${
         isVisible ? 'translate-y-0' : '-translate-y-full'
       }`}
       style={{

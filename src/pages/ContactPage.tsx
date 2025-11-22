@@ -5,6 +5,7 @@ export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone_number: '',
     subject: '',
     message: '',
   });
@@ -19,15 +20,51 @@ export default function ContactPage() {
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-    setError('');
+
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setLoading(true);
+  setError('');
+
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: JSON.stringify({
+        access_key: '341b2232-07de-4892-b7b8-e99ec25755a5',
+        name: formData.name,
+        email: formData.email,
+        phone_number: formData.phone_number,
+        subject: formData.subject,
+        message: formData.message,
+      }),
+    });
+
+    const result = await response.json();
+
+    if (!result.success) {
+      throw new Error("Email failed");
+    }
 
     setSubmitted(true);
-    setFormData({ name: '', email: '', subject: '', message: '' });
-    setLoading(false);
-  };
+    setFormData({
+      name: '',
+      email: '',
+      phone_number: '',
+      subject: '',
+      message: ''
+    });
+  } catch (err) {
+    console.error(err);
+    setError("Something went wrong. Please try again.");
+  }
+
+  setLoading(false);
+};
+
 
   return (
     <div className="min-h-screen">
@@ -98,6 +135,28 @@ export default function ContactPage() {
                         placeholder="john@example.com"
                       />
                     </div>
+
+
+
+
+                     <div>
+                      <label htmlFor="phone_number" className="block text-sm font-semibold text-gray-700 mb-2">
+                        Phone Number
+                      </label>
+                      <input
+                        type="integer"
+                        id="phone_number"
+                        name="phone_number"
+                        value={formData.phone_number}
+                        onChange={handleChange}
+                        required
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
+                        placeholder="6131234567"
+                      />
+                    </div>
+
+
+
 
                     <div>
                       <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 mb-2">

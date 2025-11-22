@@ -41,7 +41,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white flex flex-col">
+    <div className="min-h-screen bg-white flex flex-col pt-12">
       <Header currentPage={currentPage} onNavigate={setCurrentPage} />
       <main className="flex-grow">
         {renderPage()}
