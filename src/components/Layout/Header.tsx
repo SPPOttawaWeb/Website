@@ -59,7 +59,7 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center space-x-3 cursor-pointer" onClick={() => handleNavClick('home')}>
             <img
-              src="/SPP-PFP-removebg-preview.png"
+              src="/Website/SPP-PFP-removebg-preview.png"
               alt="Sts. Peter & Paul Logo"
               className="h-14 w-14 object-contain"
             />
@@ -88,7 +88,7 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
           <div className="hidden lg:block">
             <a href="https://melkite.ca/" target="_blank" rel="noopener noreferrer">
               <img
-                src="/cropped-Melkite-logo-1-3.png"
+                src="/Website/cropped-Melkite-logo-1-3.png"
                 alt="Melkite Catholic Church Logo"
                 className="h-16 w-16 object-contain"
               />

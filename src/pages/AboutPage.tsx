@@ -94,7 +94,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
               <div className="w-80">
                 <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                   <div className="bg-gradient-to-br from-red-900 to-amber-900 flex items-center justify-center">
-                    <img src="/P.-Samir.jpg" alt="Msgr. Samir Sarkis" className="w-full h-auto" />
+                    <img src="/Website/P.-Samir.jpg" alt="Msgr. Samir Sarkis" className="w-full h-auto" />
                   </div>
                   <div className="p-6">
                     <h3 className="text-2xl font-serif font-bold text-red-900 mb-1">Msgr. Samir Sarkis</h3>
