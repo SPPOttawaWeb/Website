@@ -132,16 +132,16 @@ export default function EventsPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-br from-amber-50 to-red-50">
+      <section className="py-16 bg-gradient-to-br from-red-900 to-red-800 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-serif font-bold text-red-900 mb-6">Liturgical Celebrations</h2>
-            <p className="text-gray-700 leading-relaxed mb-6">
+            <h2 className="text-3xl font-serif font-bold text-white-900 mb-6">Liturgical Celebrations</h2>
+            <p className="text-white-700 leading-relaxed mb-6">
               Throughout the year, our parish celebrates the great feasts and seasons of the Byzantine liturgical
               calendar. From the joy of Pascha to the solemnity of Great Lent, from the glory of Theophany to the
               wonder of the Nativity, each celebration invites us deeper into the mystery of Christ.
             </p>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-white-700 leading-relaxed">
               Special liturgical events and feast day celebrations are posted regularly. Join us as we journey through
               the Church year together.
             </p>

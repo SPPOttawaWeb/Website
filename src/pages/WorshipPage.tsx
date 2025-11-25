@@ -68,7 +68,7 @@ export default function WorshipPage({ onNavigate }: WorshipPageProps) {
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-8xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-serif font-bold text-red-900 mb-4">Mass Schedule</h2>
               <div className="w-24 h-1 bg-amber-500 mx-auto mb-6"></div>
@@ -121,7 +121,7 @@ export default function WorshipPage({ onNavigate }: WorshipPageProps) {
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-16xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-serif font-bold text-red-900 mb-4">The Seven Sacraments</h2>
               <div className="w-24 h-1 bg-amber-500 mx-auto mb-6"></div>
@@ -130,12 +130,11 @@ export default function WorshipPage({ onNavigate }: WorshipPageProps) {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {sacraments.map((sacrament, index) => (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-red-50 to-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-amber-500"
-                >
+                  className="bg-gradient-to-br from-red-50 to-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border-t-4 border-amber-500">
                   <div className="w-16 h-16 rounded-full bg-red-900 flex items-center justify-center mb-4">
                     <span className="text-3xl font-serif font-bold text-amber-400">{sacrament.number}</span>
                   </div>
