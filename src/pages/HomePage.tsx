@@ -53,7 +53,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
         </div>
       </section>
 {/*
-       <section className="py-20 bg-white"> 
+       <section className="py-20 bg-white">    This is the homepage emojis if needed
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-red-900 mb-6">Welcome to Our Parish</h2>
