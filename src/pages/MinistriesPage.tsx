@@ -1,4 +1,4 @@
-import { Users, Music, BookOpen, Heart, UserCheck, Waves, HandHeart } from 'lucide-react';
+import { Users, Music, BookOpen, Heart, UserCheck, Waves, HeartHandshake } from 'lucide-react';
 
 interface MinistriesPageProps {
   onNavigate?: (page: string) => void;
@@ -60,7 +60,7 @@ export default function MinistriesPage({ onNavigate }: MinistriesPageProps) {
       schedule: 'Saturdays at 10:30am',
       contact: 'Najwa Mansour',
       phone: '819-712-3219',
-      icon: <HandHeart className="h-8 w-8" />,
+      icon: <HeartHandshake className="h-8 w-8" />,
     },
     {
       name: 'Scouts',
