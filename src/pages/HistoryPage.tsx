@@ -46,39 +46,6 @@ export default function HistoryPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-serif font-bold text-red-900 mb-4">Parish Timeline</h2>
-              <div className="w-24 h-1 bg-amber-500 mx-auto mb-6"></div>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">The journey of Sts. Peter & Paul Parish in Ottawa</p>
-            </div>
-
-            <div className="relative">
-              <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-amber-500 via-red-200 to-amber-500"></div>
-
-              <div className="space-y-8">
-                {timeline.map((item, index) => (
-                  <div key={index} className="relative pl-20 group">
-                    <div className="absolute left-0 top-0 w-16 h-16 bg-white rounded-full border-4 border-amber-500 flex items-center justify-center shadow-lg transition-transform group-hover:scale-110">
-                      <div className="w-8 h-8 bg-gradient-to-br from-red-900 to-amber-700 rounded-full"></div>
-                    </div>
-
-                    <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 p-6 border border-gray-100">
-                      <div className="inline-block bg-gradient-to-r from-red-900 to-red-800 text-amber-400 px-4 py-1.5 rounded-full font-bold text-sm mb-3 shadow-sm">
-                        {item.year}
-                      </div>
-                      <p className="text-gray-700 leading-relaxed">{item.event}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
@@ -246,6 +213,40 @@ export default function HistoryPage() {
           </div>
         </div>
       </section>
+
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-serif font-bold text-red-900 mb-4">Parish Timeline</h2>
+              <div className="w-24 h-1 bg-amber-500 mx-auto mb-6"></div>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">The journey of Sts. Peter & Paul Parish in Ottawa</p>
+            </div>
+
+            <div className="relative">
+              <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-amber-500 via-red-200 to-amber-500"></div>
+
+              <div className="space-y-8">
+                {timeline.map((item, index) => (
+                  <div key={index} className="relative pl-20 group">
+                    <div className="absolute left-0 top-0 w-16 h-16 bg-white rounded-full border-4 border-amber-500 flex items-center justify-center shadow-lg transition-transform group-hover:scale-110">
+                      <div className="w-8 h-8 bg-gradient-to-br from-red-900 to-amber-700 rounded-full"></div>
+                    </div>
+
+                    <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 p-6 border border-gray-100">
+                      <div className="inline-block bg-gradient-to-r from-red-900 to-red-800 text-amber-400 px-4 py-1.5 rounded-full font-bold text-sm mb-3 shadow-sm">
+                        {item.year}
+                      </div>
+                      <p className="text-gray-700 leading-relaxed">{item.event}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
     </div>
   );
 }

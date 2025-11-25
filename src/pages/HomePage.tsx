@@ -8,7 +8,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
 
   return (
     <div className="min-h-screen">
-      <section className="relative bg-gradient-to-b from-amber-50 via-white to-white overflow-hidden pt-24">
+      <section className="relative bg-gradient-to-b from-amber-50 via-white to-white overflow-hidden">
         <div className="container mx-auto px-4 py-16">
           <div className="grid lg:grid-cols-2 gap-12 items-center max-w-10xl mx-auto">
             <div className="animate-fadeIn lg:text-left text-center order-2 lg:order-1">
@@ -52,8 +52,8 @@ export default function HomePage({ onNavigate }: HomePageProps) {
           <ChevronDown className="h-8 w-8 text-red-900 mx-auto animate-bounce" />
         </div>
       </section>
-
-      <section className="py-20 bg-white">
+{/*
+       <section className="py-20 bg-white"> 
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-red-900 mb-6">Welcome to Our Parish</h2>
@@ -96,7 +96,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
           </div>
         </div>
       </section>
-
+*/}
       <section className="py-20 bg-gradient-to-br from-red-900 to-red-800 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
