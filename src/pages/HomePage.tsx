@@ -7,7 +7,51 @@ interface HomePageProps {
 export default function HomePage({ onNavigate }: HomePageProps) {
 
   return (
-    <div className="min-h-screen">
+
+    //old home page
+         <div className="min-h-screen">
+      <section className="relative h-screen bg-gradient-to-br from-red-900 via-red-800 to-amber-900 text-white overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="/Outside-SPP-Church.jpg"
+            alt="Sts. Peter & Paul Church"
+            className="w-full h-full object-cover object-[center_20%]"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70"></div>
+        </div>
+
+        <div className="container mx-auto px-4 h-full flex items-center relative z-10">
+          <div className="max-w-3xl animate-fadeIn">
+            <div className="inline-block bg-amber-500 text-red-900 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+              Byzantine Catholic Tradition
+            </div>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 leading-tight">
+              Welcome to<br />
+              <span className="text-amber-300">Sts. Peter & Paul</span>
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 text-gray-100 leading-relaxed">
+              A community rooted in ancient Eastern Christian traditions, celebrating the Divine Liturgy in union with Rome
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <button
+                onClick={() => onNavigate('worship')}
+                className="bg-amber-500 hover:bg-amber-600 text-red-900 font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center"
+              >
+                View Mass Times
+                <ChevronRight className="ml-2 h-5 w-5" />
+              </button>
+              <button
+                onClick={() => onNavigate('about')}
+                className="bg-transparent border-2 border-white hover:bg-white hover:text-red-900 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 flex items-center justify-center"
+              >
+                Learn About Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/*new hpme page*/}
+    {/*<div className="min-h-screen">
       <section className="relative bg-gradient-to-b from-amber-50 via-white to-white overflow-hidden">
         <div className="container mx-auto px-4 py-16">
           <div className="grid lg:grid-cols-2 gap-12 items-center max-w-10xl mx-auto">
@@ -52,6 +96,9 @@ export default function HomePage({ onNavigate }: HomePageProps) {
           <ChevronDown className="h-8 w-8 text-red-900 mx-auto animate-bounce" />
         </div>
       </section>
+*/}
+
+
 {/*
        <section className="py-20 bg-white">    This is the homepage emojis if needed
         <div className="container mx-auto px-4">
@@ -121,6 +168,6 @@ export default function HomePage({ onNavigate }: HomePageProps) {
           </div>
         </div>
       </section>
-    </div>
+    </div>  
   );
 }
