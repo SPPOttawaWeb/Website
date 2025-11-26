@@ -141,7 +141,7 @@ export default function DonatePage() {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-br from-amber-50 to-red-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-serif font-bold text-red-900 mb-6">Thank You</h2>
@@ -154,18 +154,18 @@ export default function DonatePage() {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-br from-amber-50 to-red-50">
-        <div className="container mx-auto px-4">
+      <section className="py-16 bg-gradient-to-br from-red-900 to-red-800 text-white">
+        <div className="container mx-auto px-4"> {/*py-16 bg-gradient-to-br from-amber-50 to-red-50*/}
           <div className="max-w-4xl mx-auto text-center">
-            <Heart className="h-16 w-16 text-red-900 mx-auto mb-6" />
-            <h2 className="text-3xl font-serif font-bold text-red-900 mb-6">
+            <Heart className="h-16 w-16 text-amber-600 mx-auto mb-6" />
+            <h2 className="text-3xl font-serif font-bold text-amber-600 mb-6">
               "Give, and it will be given to you"
             </h2>
-            <p className="text-xl text-gray-700 leading-relaxed mb-6">
+            <p className="text-xl text-white-700 leading-relaxed mb-6">
               "A good measure, pressed down, shaken together, running over, will be put into your lap. For the measure
               you give will be the measure you get back."
             </p>
-            <p className="text-amber-700 font-serif text-lg italic">- Luke 6:38</p>
+            <p className="text-amber-600 font-serif text-lg italic">- Luke 6:38</p>
           </div>
         </div>
       </section>

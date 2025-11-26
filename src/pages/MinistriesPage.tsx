@@ -251,14 +251,14 @@ export default function MinistriesPage({ onNavigate }: MinistriesPageProps) {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-br from-red-900 to-red-800 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-serif font-bold text-red-900 mb-6">Gifts of the Holy Spirit</h2>
-            <p className="text-gray-700 leading-relaxed text-lg mb-6">
+            <h2 className="text-3xl font-serif font-bold text-amber-600 mb-6">Gifts of the Holy Spirit</h2>
+            <p className="text-white-700 leading-relaxed text-lg mb-6">
               "Now there are varieties of gifts, but the same Spirit; and there are varieties of service, but the same Lord; and there are varieties of working, but it is the same God who inspires them all in every one."
             </p>
-            <p className="text-amber-700 font-serif italic text-xl">- 1 Corinthians 12:4-6 RSV</p>
+            <p className="text-amber-500 font-serif italic text-xl">- 1 Corinthians 12:4-6 RSV</p>
           </div>
         </div>
       </section>

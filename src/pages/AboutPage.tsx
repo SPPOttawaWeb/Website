@@ -229,9 +229,10 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
                 Blessed Virgin Mary and the saints, and hold fast to the teachings of the Church Fathers and the
                 Ecumenical Councils.
               </p>
-              <p className="text-amber-300 font-serif text-xl italic mt-6">
-                "That they may all be one, as you, Father, are in me and I in you." - John 17:21
+              <p className="text-white font-serif text-xl italic mt-6">
+                "that they may all be one; even as thou, Father, art in me, and I in thee, that they also may be in us, so that the world may believe that thou hast sent me."
               </p>
+               <p className="text-amber-500 font-serif italic text-xl">- John 17:21 RSV</p>
             </div>
           </div>
         </div>

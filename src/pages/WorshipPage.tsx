@@ -165,9 +165,12 @@ export default function WorshipPage({ onNavigate }: WorshipPageProps) {
       <section className="py-16 bg-gradient-to-br from-red-900 to-red-800 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-serif font-bold mb-6">Come and See</h2>
-            <p className="text-xl text-gray-200 leading-relaxed mb-8">
-              "Taste and see that the Lord is good; blessed is the one who takes refuge in him." - Psalm 34:8
+            <h2 className="text-4xl font-serif text-amber-600 font-bold mb-6">Come and See</h2>
+            <p className="text-xl text-gray-200 leading-relaxed mb-1">
+              "O taste and see that the Lord is good! Happy is the man who takes refuge in him!"
+            </p>
+            <p className="text-amber-600 font-serif italic text-xl mb-8">
+              - Psalm 34:8 RSV
             </p>
             <p className="text-lg text-gray-300">
               All are welcome to experience the beauty and depth of Byzantine Catholic worship. No registration required
