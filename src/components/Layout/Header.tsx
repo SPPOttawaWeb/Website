@@ -59,7 +59,7 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center space-x-3 cursor-pointer" onClick={() => handleNavClick('home')}>
             <img
-              src="/Website/SPP-PFP-removebg-preview.png"
+              src="/SPP-PFP-removebg-preview.png"
               alt="Sts. Peter & Paul Logo"
               className="h-14 w-14 object-contain"
             />

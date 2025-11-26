@@ -40,7 +40,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
 
             <div className="order-1 lg:order-2">
               <img
-                src="/Website/SPP-FrontPOVTrue.png"
+                src="/SPP-FrontPOVTrue.png"
                 alt="Sts. Peter & Paul Church"
                 className="w-full h-auto object-contain"
               />
