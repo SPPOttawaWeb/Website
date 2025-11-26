@@ -88,7 +88,7 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
           <div className="hidden lg:block">
             <a href="https://melkite.ca/" target="_blank" rel="noopener noreferrer">
               <img
-                src="/Website/cropped-Melkite-logo-1-3.png"
+                src="/cropped-Melkite-logo-1-3.png"
                 alt="Melkite Catholic Church Logo"
                 className="h-16 w-16 object-contain"
               />
