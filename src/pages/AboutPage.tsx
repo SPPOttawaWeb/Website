@@ -240,4 +240,4 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
     </div>
   );
 }
-{/*test */}
+{/*test2 */}
