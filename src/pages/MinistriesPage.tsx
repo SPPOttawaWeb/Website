@@ -97,7 +97,7 @@ export default function MinistriesPage({ onNavigate }: MinistriesPageProps) {
             </div>
             <h1 className="text-5xl md:text-6xl font-serif font-bold mb-6">Parish Ministries</h1>
             <p className="text-xl text-gray-100 leading-relaxed">
-              Join our vibrant community groups and discover your calling to serve
+              Join our community groups and discover your calling to serve
             </p>
           </div>
         </div>

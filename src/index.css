@@ -68,8 +68,46 @@
   .prose-invert {
     color: rgba(255, 255, 255, 0.9);
   }
+
+  /* ----------------------------- */
+  /* DROPDOWN FLIP ANIMATION      */
+  /* ----------------------------- */
+  @keyframes dropdownFlip {
+    0% {
+      opacity: 0;
+      transform: rotateX(-90deg);
+    }
+    100% {
+      opacity: 1;
+      transform: rotateX(0deg);
+    }
+  }
+
+  .dropdown-animate {
+    animation: dropdownFlip 350ms ease-out forwards;
+    transform-origin: top center;
+  }
+
+  /* ----------------------------- */
+  /* HOVER ARROW INDICATOR        */
+  /* ----------------------------- */
+  .menu-hover-item {
+    position: relative;
+    padding-left: 1.6rem;
+  }
+
+  .menu-hover-item:hover::before {
+    content: "→";
+    position: absolute;
+    left: 0.4rem;
+    top: 0.1rem;
+    font-weight: bold;
+    color: #fcd34d; /* amber-300 */
+    transition: all 0.2s ease-in-out;
+  }
 }
 
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
