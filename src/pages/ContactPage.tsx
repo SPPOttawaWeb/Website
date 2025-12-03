@@ -27,21 +27,14 @@ const handleSubmit = async (e: React.FormEvent) => {
   setError('');
 
   try {
-    const response = await fetch("https://api.web3forms.com/submit", {
+    const response = await fetch("/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Accept: "application/json"
       },
-      body: JSON.stringify({
-        access_key: '341b2232-07de-4892-b7b8-e99ec25755a5',
-        name: formData.name,
-        email: formData.email,
-        phone_number: formData.phone_number,
-        subject: formData.subject,
-        message: formData.message,
-      }),
+      body: JSON.stringify(formData),
     });
+
 
     const result = await response.json();
 
